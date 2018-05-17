@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Bismillah</title>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -13,12 +10,12 @@
 <!-- nav chancge into the compact verisan on small screens-->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 		<div class="container">
-		<!-- collapse on small screens -->
+			<!-- brand -->
+			<a class="navbar-brand">Social Media</a>
+			<!-- collapse on small screens -->
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<!-- brand -->
-			<a class="navbar-brand">Social Media</a>
 			<!-- list collapse -->
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav ml-auto">
@@ -328,7 +325,39 @@
 		</div>
 	</footer>
 	<!-- end main footer -->
-	
+
+	<!-- contact modal -->
+	<div class="modal fade" id="contactModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
+					<button class="close" data-dismiss="modal"><span>&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" name="name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea name="message" class="form-control"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<Button class="btn btn-primary">Submit</Button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact modal -->
+
 </body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
